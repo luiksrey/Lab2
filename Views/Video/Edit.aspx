@@ -4,22 +4,24 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>Registrar video</title>
-    <meta charset="UTF-8">
-  <meta name="description" content="CRUD Video ASP.NET MVC 2.0">
-  <meta name="keywords" content="ASSP.NET,MVC,Facpya">
-  <meta name="author" content="Luis Reyes">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
+    <title>Edit</title>
 </head>
 <body>
-    <form action="/Video/Create" method="post">
+    <form action="/Video/Edit" method="post">
     <fieldset>
-    <legend>Registrar video</legend>
+    <legend>Id del video a modificar</legend>
 
     <label for="idVideo">IdVideo</label>
     <input type="text" name="idVideo" />
+    </fieldset>
+    </form>
 
+    <form action="/Video/Edit" method="post">
+    <fieldset>
+    <legend>Datos nuevos</legend>
+
+    <label for="idVideo">IdVideo</label>
+    <input type="text" name="idVideo" />
     <label for="titulo">titulo</label>
     <input type="text" name="titulo" />
 
